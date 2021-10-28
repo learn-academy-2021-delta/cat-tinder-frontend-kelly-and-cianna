@@ -12,6 +12,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import './App.css'
 
 import mockCats from './mockCats.js'
 
@@ -29,12 +30,12 @@ class App extends Component{
       <Router>
       <Header />
         <Switch>
-        <Home />
-        <CatIndex />
-        <CatShow />
-        <CatNew />
-        <CatEdit />
-        <NotFound />
+        <Route exact path="/" component={Home} />
+        <Route path="/catindex" component={CatIndex} />
+        <Route path="/catshow" component={CatShow} />
+        <Route path="/catnew" component={CatNew} />
+        <Route path="/catedit" component={CatEdit} />
+        <Route component={NotFound} />
         </Switch>
       <Footer />
       
