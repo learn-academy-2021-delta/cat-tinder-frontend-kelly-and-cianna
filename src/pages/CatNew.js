@@ -11,7 +11,6 @@ class CatNew extends Component{
           enjoys: ""
         }
       }
-  // }
   }
 
   handleChange = (e) => {
