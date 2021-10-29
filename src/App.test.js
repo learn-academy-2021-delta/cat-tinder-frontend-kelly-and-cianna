@@ -26,7 +26,7 @@ describe('When the app renders', () => {
 
     const renderedHomeRoute = renderedApp.find('[path="/"]')
 
-    // console.log("props", renderedHomeRoute.props())
+    
 
     expect(renderedHomeRoute.props().component).toEqual(Home)
   })
@@ -40,9 +40,3 @@ describe('When the app renders', () => {
   })
 })
 
-
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
