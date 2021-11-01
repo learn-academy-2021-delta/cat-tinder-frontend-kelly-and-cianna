@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yatra One', cursive;
+}
+
 .App {
   text-align: center;
 }
@@ -46,6 +54,9 @@ header {
   }
 }
 
+.home {
+  background-color: #BCEDFE;
+}
 footer {
   font-size: 20px;
   position: fixed;
@@ -54,4 +65,10 @@ footer {
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
+}
+
+.bgimg {
+  background-color: #BCEDFE;
+  background-size: cover;
+  height: 100vh;
 }

@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+ 
 
 class Home extends Component{
   render(){
     return(
       <>
-        <h1>This is Home</h1>
+      <div className="bgimg">
+        <h1>Welcome to Tindpurrr!</h1>
+        </div>
       </>
     )
   }
