@@ -6,6 +6,14 @@
   font-family: 'Yatra One', cursive;
 }
 
+.page-body {
+  background-color: #BCEDFE;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
@@ -23,10 +31,7 @@
 
 header {
   background-color: #fcfcfc;
-  /* min-height: 100vh; */
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -40,6 +45,17 @@ header {
   flex-direction: row;
   align-items: flex-end;
   padding-right: 50px;
+}
+.nav-links a {
+  color:#13090b;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+  cursor: pointer;
+  color: #F97AAC;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😻</text></svg>")
+        16 0, auto;
 }
 .App-link {
   color: #61dafb;
@@ -69,6 +85,23 @@ footer {
 
 .bgimg {
   background-color: #BCEDFE;
-  background-size: cover;
+  background-size: auto;
   height: 100vh;
+  text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
+
+.index-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card.card-body {
+  width: 300px;
+  background-color: white;
+  margin: 20px;
+}
+
