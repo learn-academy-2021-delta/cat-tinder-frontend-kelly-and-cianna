@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom'
 
 class CatIndex extends Component{
   render(){
+    const { cats } = this.props
     return(
       <>
         <h1>Meet Your Purrfect Match</h1>
-        {this.props.cats && this.props.cats.map(cat => {
+        {cats && cats.map(cat => {
           return (
             <p key={cat.id}>
               <NavLink to={`/catShow/${cat.id}`}>
