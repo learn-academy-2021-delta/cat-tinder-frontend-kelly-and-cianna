@@ -38,6 +38,8 @@ class CatNew extends Component{
             <Input
               name="name"
               type="text"
+              onChange={this.handleChange}
+              value={this.state.form.name}
             />
           </FormGroup>
           <FormGroup>
@@ -47,6 +49,8 @@ class CatNew extends Component{
             <Input
               name="age"
               type="text"
+              onChange={this.handleChange}
+              value={this.state.form.age}
             />
           </FormGroup>
           <FormGroup>
@@ -56,6 +60,8 @@ class CatNew extends Component{
             <Input
               name="enjoys"
               type="text"
+              onChange={this.handleChange}
+              value={this.state.form.enjoys}
             />
           </FormGroup>
           <Button
